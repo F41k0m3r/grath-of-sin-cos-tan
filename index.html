@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" charset="UTF-8"
+            src="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraphcore.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraph.css" />
+    <script type="text/javascript" src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="modalWrap">
+      <div class="modal">
+        <select id="fn" class="select">
+          <option disabled>select fn</option>
+          <option value="sin">sin</option>
+          <option value="cos">cos</option>
+          <option value="tg">tg</option>
+        </select>
+        <div class="inputWrap">
+          <h4>amplitude</h4>
+          <input type="number" id="Amplitude" class="input" placeholder="keep clear if you doesnt know what is it">
+        </div>
+        <div class="inputWrap">
+          <h4>frequency</h4>
+          <input type="number" id="Frequency" class="input" placeholder="keep clear if you doesnt know what is it">
+        </div>
+        <button id="button" class="button">Нарисовать</button>
+      </div>
+    </div>
+    <div class="board" id="board"></div>
+  </body>
+</html>
